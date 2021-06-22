@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NoteTaker</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Notetaker App</h1>
+    <h4>Create a new note by submitting its title and content below</h4>
+    <div id="user-input">
+      <p>Title</p>
+      <input type="text" id="title" />
+      <br />
+      <p>Note</p>
+      <textarea id="note"></textarea>
+      <div id="buttons">
+        <div id="action-button">
+          <button id="make-new">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="results"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

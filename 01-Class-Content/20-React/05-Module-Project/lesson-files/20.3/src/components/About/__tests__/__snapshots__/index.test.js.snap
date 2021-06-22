@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="my-5"
+  >
+    <h1
+      id="about"
+    >
+      Who am I?
+    </h1>
+    <img
+      alt="cover"
+      class="my-2"
+      src="cover-image.jpg"
+      style="width: 100%;"
+    />
+    <div
+      class="my-2"
+    >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`About component renders matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <section
+    class="my-5"
+  >
+    <h1
+      id="about"
+    >
+      Who am I?
+    </h1>
+    <img
+      alt="cover"
+      class="my-2"
+      src="cover-image.jpg"
+      style="width: 100%;"
+    />
+    <div
+      class="my-2"
+    >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;

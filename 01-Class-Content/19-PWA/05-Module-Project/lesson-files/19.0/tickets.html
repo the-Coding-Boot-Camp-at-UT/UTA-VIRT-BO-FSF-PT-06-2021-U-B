@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tickets</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/tickets.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src='assets/js/vendor/jQuery.js'></script>
+  <script src='assets/js/vendor/bootstrap.js'></script>
+  <script src='assets/js/script.js'></script>
+</head>
+<body class="tickets-bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Food Festival</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item active">
+            <span class="sr-only">(current)</span>
+            <a class="nav-link" href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="ticket-container container mt-10">
+      <h1>
+        Ticket Options
+      </h1>
+      <table class="table table-striped table-dark" id="ticket-table">
+        <thead>
+          <tr>
+            <th scope="col">Options</th>
+            <th scope="col">1-Day Pass</th>
+            <th scope="col">2-Day Pass</th>
+            <th scope="col">3-Day Pass</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Single Pass</th>
+            <td>$25</td>
+            <td>$50</td>
+            <td>$70</td>
+          </tr>
+          <tr>
+            <th scope="row">Pack 2</th>
+            <td>$40</td>
+            <td>$90</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <th scope="row">Pack of 3</th>
+            <td>$55</td>
+            <td>$80</td>
+            <td>$105</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="col text-center">
+        <button type="button" class="btn btn-primary purchase" data-toggle="modal" data-target="#purchaseModal">Purchase Tickets!</button>
+      </div>
+    </div>
+    <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="purchaseModalLabel">Purchase Tickets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <select class="form-control form-control-lg option1">
+                <option>1-Day-Package</option>
+                <option>2-Day-Package</option>
+                <option>3-Day-Package</option>
+              </select>
+              <select class="form-control">
+                <option>Single</option>
+                <option>2 Passes</option>
+                <option>3 Passes</option>
+              </select>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="purchaseEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind!</button>
+              <button type="button" class="btn btn-primary" id="purchaseBtn">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="page-footer" id="ticket-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 py-5">
+            <div class="flex-center">
+              <!-- Facebook -->
+              <a>
+                <i class="fa fa-facebook fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a>
+                <i class="fa fa-twitter fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Google +-->
+              <a>
+                <i class="fa fa-google-plus fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a>
+                <i class="fa fa-instagram fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a>
+                <i class="fa fa-pinterest fa-lg text-white fa-2x"> </i>
+              </a>
+            </div>
+          </div>        
+        </div>        
+      </div>        
+    </div>        
+    <div class="footer-copyright text-center py-3 text-white">© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.</div>        
+  </footer>    
+</body>
+</html>

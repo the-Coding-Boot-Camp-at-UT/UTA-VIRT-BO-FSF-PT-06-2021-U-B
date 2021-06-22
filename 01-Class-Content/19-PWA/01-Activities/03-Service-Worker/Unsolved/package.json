@@ -1,0 +1,17 @@
+{
+  "name": "images-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node seeders/seed.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "glob": "^7.1.4",
+    "mongoose": "^5.5.8"
+  }
+}

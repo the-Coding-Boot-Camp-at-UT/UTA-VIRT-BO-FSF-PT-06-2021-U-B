@@ -1,0 +1,15 @@
+{
+  "name": "05-RPG-TDD",
+  "version": "1.0.0",
+  "description": "In this activity, you will write tests outlining the expected functionality for the RPG game we created in the first activity `RPG-Prototypes`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}

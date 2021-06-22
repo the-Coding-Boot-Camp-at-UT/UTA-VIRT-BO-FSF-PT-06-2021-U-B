@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Git it Done</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
+    <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
+    </p>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search By User</h3>
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="username">Username</label>
+          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Get User</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search By Topic</h3>
+        <div id="language-buttons" class="card-body">
+          <button data-language="javascript" class="btn">JavaScript</button>
+          <button data-language="html" class="btn">HTML</button>
+          <button data-language="css" class="btn">CSS</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
+      <div id="repos-container" class="list-group">
+
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/homepage.js"></script>
+</body>
+
+</html>

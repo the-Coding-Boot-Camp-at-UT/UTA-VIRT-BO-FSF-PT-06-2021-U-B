@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Festival</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src='./dist/app.bundle.js' defer ></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Food Festival</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tickets.html">Tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="complementary">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div id="carousel-item-1" class="carousel-item fullscreen-carousel active" style="background-image: url('./assets/img/chips.jpg')">
+            <div class="d-flex h-100 align-items-center justify-content-center carousel-caption">
+              <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <h2 class="display-4 mb-2">Welcome to the regional food event!</h2>
+                </div>
+                <div class="row align-items-center justify-content-center"> 
+                  <h3>Here is your guide to all things delicious.</h3>
+                </div>
+                <div class=" mt-4 row align-items-center justify-content-center"> 
+                  <a class="btn btn-primary" href="#">
+                      Sign me up!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </header>
+
+      <!-- Page Content -->
+    <div class="page-content">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="display-4">Schedule</h1>
+          <p class="lead">We've got a great event planned! From Friday to Sunday, we will be serving differently themed menus on each day! </p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h1 class="display-4">Testimonials</h1>
+          <p class="lead">Lorem ipsum add testimonials here </p>
+        </div>
+      </section>
+
+      <section class="py-5">
+          <div class="container">
+            <h1 class="display-4">Mission Statement</h1>
+            <p class="lead">Here at food event, we pride ourselves on delicious food and fun weekends!</p>
+          </div>
+        </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h1 class="display-4">Our Numbers</h1>
+          <p class="lead">Some Cool stats here. Over 100k served etc.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="call-to-action">
+      <div class="container">
+          <div class="row align-items-center justify-content-center">
+                  <h1 class="mt-4 mr-5 text-white">Ready to EAT?</h1>
+                <a class="ml-5 btn btn-white">RSVP now!</a> 
+          </div>
+      </div>
+    </section>
+    <div class="modal" tabindex="-1" id="myModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 py-5">
+            <div class="flex-center">
+              <!-- Facebook -->
+              <a>
+                <i class="fa fa-facebook fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a>
+                <i class="fa fa-twitter fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Google +-->
+              <a>
+                <i class="fa fa-google-plus fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a>
+                <i class="fa fa-instagram fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a>
+                <i class="fa fa-pinterest fa-lg text-white fa-2x"> </i>
+              </a>
+            </div>
+          </div>        
+        </div>        
+      </div>        
+      <div class="footer-copyright text-center py-3 text-white">© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.</div>        
+    </footer>
+</body>
+<script>
+  (function() {
+    if("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })();
+  </script>
+</html>

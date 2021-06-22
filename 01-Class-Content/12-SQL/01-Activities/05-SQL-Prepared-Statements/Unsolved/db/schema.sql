@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS inventory_db;
+CREATE DATABASE inventory_db;
+
+USE inventory_db;
+
+CREATE TABLE books (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  book_name VARCHAR(30) NOT NULL
+);

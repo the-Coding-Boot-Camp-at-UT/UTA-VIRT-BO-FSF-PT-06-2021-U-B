@@ -1,0 +1,27 @@
+<h1>Library Books</h1>
+
+<h3>Welcome to the Library!
+  {{#if firstTime}}
+  This is your first time visiting the Library!
+  {{else}}
+  You have visited the Library {{countVisit}} times!
+  {{/if}}
+</h3>
+
+<h2>Books you've already read</h2>
+<ul>
+  {{#each library}}
+  {{#if read}}
+  {{> books/book-block}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Books you haven't read yet</h2>
+<ul>
+  {{#each library}}
+  {{#unless read}}
+  {{> books/book-block}}
+  {{/unless}}
+  {{/each}}
+</ul>

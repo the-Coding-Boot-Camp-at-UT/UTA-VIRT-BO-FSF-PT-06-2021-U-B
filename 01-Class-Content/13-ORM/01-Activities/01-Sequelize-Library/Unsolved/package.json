@@ -1,0 +1,19 @@
+{
+  "name": "sequelize-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node app/seeds/books.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql2": "^1.6.4",
+    "sequelize": "^5.21.5"
+  }
+}

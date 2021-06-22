@@ -1,0 +1,22 @@
+.tickets-bg {
+	background-image: url(../img/falafel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+td {
+	padding: 5px;
+}
+
+.purchase {
+	height: 100px;
+	width: 150px;
+}
+
+.option1 {
+	margin-bottom: 10px;
+}
+#ticket-table {
+	margin: 0 auto;
+	height: 45vh;
+	font-size: 18px;
+}

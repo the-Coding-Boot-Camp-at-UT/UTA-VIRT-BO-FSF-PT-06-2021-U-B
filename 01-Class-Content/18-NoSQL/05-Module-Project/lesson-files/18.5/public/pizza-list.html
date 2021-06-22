@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>All Pizzas | Pizza Hunt</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap&family=Karla:400,700|Rubik:400,400i,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="py-3 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <a href="/">
+        <h1 class="text-light bg-dark py-3 px-4 logo round-25-80">Pizza Hunt</h1>
+      </a>
+
+      <h3 class="text-light bg-dark p-3 round-25-80">
+        Create your own recipe
+      </h3>
+    </div>
+  </header>
+
+  <main class="container-fluid flex-row mx-auto justify-space-between align-start">
+
+    <section class="bg-dark p-3 col-12 col-lg-8 mb-3 rounded">
+      <h2 class="text-light ">Check out the pizzas!</h2>
+      <div id="pizza-list" class="flex-row justify-space-between"></div>
+    </section>
+
+    <section class="bg-dark p-3 col-12 col-lg-4 mb-3 rounded">
+      <h2 class="text-light">Looking to do something else?</h2>
+      <nav>
+        <a class="btn display-block rounded" href="/add-pizza">Create a New Pizza.</a>
+      </nav>
+    </section>
+
+  </main>
+  <script src="./assets/js/pizza-list.js"></script>
+</body>
+
+</html>

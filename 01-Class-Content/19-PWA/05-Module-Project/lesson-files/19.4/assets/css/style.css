@@ -1,0 +1,105 @@
+html, body { margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+.fullscreen-carousel {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.text-white {
+  color: white;
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: #000000;
+  opacity: 0.6;
+}
+
+.call-to-action {
+  background:#0086d2;
+  padding:40px 0;
+}
+
+.btn {
+  border-radius: 5px;
+  margin: 21px 0 0 0;
+  font-weight:700;
+  cursor: pointer;
+}
+
+.btn.btn-white {
+  background: #fff;
+  color: #666;
+  border-bottom: 4px solid #ddd;
+}
+
+.page-content {
+  background-image: url("../img/burgers.jpg");
+  background-size: cover;
+}
+
+.pt-5, .py-5 {
+  color: white;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: 30vw;
+  object-fit: cover;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.schedule-bg {
+  background-image: url("https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
+  background-size: cover;
+}
+
+#page {
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
+
+#carousel-container {
+  position: relative;
+  height: 100%;
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
+
+p.lead {
+  background-color: rgba(59, 61, 59, 0.45);
+  display: inline-block;
+}

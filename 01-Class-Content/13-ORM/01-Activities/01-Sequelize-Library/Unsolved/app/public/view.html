@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Express Library</title>
+
+    <!-- Bootstrap CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Express Library</h1>
+        <h3>Books Books Books!</h3>
+        <hr />
+        <a href="/" class="btn btn-danger btn-lg">
+          <span class="fa fa-eye"></span> Search Books</a
+        >
+        <a href="/all" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span> All Books</a
+        >
+        <a href="/long" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span> Long Books</a
+        >
+        <a href="/short" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span> Short Books</a
+        >
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card mb-4">
+            <div class="card-header">
+              Author Search
+            </div>
+            <div class="card-body">
+              <input type="text" id="author-search" class="form-control" />
+              <br />
+              <div class="text-right">
+                <button class="btn btn-primary btn-md" id="author-search-btn">
+                  <span class="fa fa-search"></span> Search
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-header">
+              Genre Search
+            </div>
+            <div class="card-body">
+              <input type="text" id="genre-search" class="form-control" />
+              <br />
+              <div class="text-right">
+                <button class="btn btn-primary btn-md" id="genre-search-btn">
+                  <span class="fa fa-search"></span> Search
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-header">
+              Book Search Results
+            </div>
+            <div class="card-body">
+              <div class="well" id="stats">
+                <h2 id="title">Book:</h2>
+                <div>
+                  <p>
+                    <strong>Author:</strong>
+                    <span id="author"></span>
+                  </p>
+                  <p>
+                    <strong>Genre:</strong>
+                    <span id="genre"></span>
+                  </p>
+                  <p>
+                    <strong>Pages:</strong>
+                    <span id="pages"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="js/view.js" type="text/javascript"></script>
+  </body>
+</html>

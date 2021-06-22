@@ -1,0 +1,29 @@
+<h1>Library Books</h1>
+
+<h2>Books you've already read</h2>
+<!-- Replace the code of the book details by importing the Handlebars partial -->
+<ul>
+  {{#each library}}
+  {{#if read}}
+  <li>
+    <p>Title: {{title}}</p>
+    <p>Author: {{author}}</p>
+    <p>Read: {{read}}</p>
+  </li>
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Books you haven't read yet</h2>
+<!-- Replace the code of the book details by importing the Handlebars partial -->
+<ul>
+  {{#each library}}
+  {{#unless read}}
+  <li>
+    <p>Title: {{title}}</p>
+    <p>Author: {{author}}</p>
+    <p>Read: {{read}}</p>
+  </li>
+  {{/unless}}
+  {{/each}}
+</ul>

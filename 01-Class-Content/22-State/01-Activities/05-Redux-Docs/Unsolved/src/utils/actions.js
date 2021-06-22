@@ -1,0 +1,2 @@
+export const UPDATE_BOOKS = 'UPDATE_BOOKS';
+export const UPDATE_CURRENT_BOOK = 'UPDATE_CURRENT_BOOK';

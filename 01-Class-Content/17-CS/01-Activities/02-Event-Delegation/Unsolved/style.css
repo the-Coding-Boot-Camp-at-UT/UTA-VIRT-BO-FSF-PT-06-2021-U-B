@@ -1,0 +1,21 @@
+.outer-div {
+  width: 90%;
+  height: 100vh;
+  background-color: #78a1bb;
+  cursor: pointer;
+  padding: 100px;
+}
+
+.inner-div-1 {
+  width: 90%;
+  height: 100vh;
+  background-color: #ebf5ee;
+  padding: 100px;
+}
+
+.button {
+  background-color: #283044;
+  color: white;
+  padding: 20px;
+  margin: 100px;
+}

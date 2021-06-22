@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/jass.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header
+      class="container-fluid text-center text-white bg-dark p-2 weather-header"
+    >
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <!-- max-width for ultra wide resolutions -->
+    <div class="container-fluid" style="max-width: 1400px">
+      <div class="row">
+        <aside class="col-lg-3 pb-3">
+          <h2 id="form-heading" class="mt-1 h3 form-label">
+            Search for a City:
+          </h2>
+          <form id="search-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group">
+                <input
+                  class="form-input weather-search"
+                  type="text"
+                  id="search-input"
+                  placeholder="San Diego"
+                  aria-labelledby="form-heading"
+                  aria-controls="today forecast"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="submit"
+                    class="btn search-button"
+                    id="search-button"
+                    aria-label="submit search"
+                  >
+                    Search
+                  </button>
+                  <hr class="hr weather-hr" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="list-group" id="history"></div>
+        </aside>
+
+        <div class="col-lg-9 pb-3">
+          <section
+            id="today"
+            class="mt-3"
+            role="region"
+            aria-live="polite"
+          ></section>
+          <section
+            id="forecast"
+            class="row mt-3"
+            role="region"
+            aria-live="polite"
+          ></section>
+        </div>
+      </div>
+    </div>
+
+    <!-- use day.js to easily format dates -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+      integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "mern-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon",
+    "seed": "node seeders/seeds.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "mongoose": "^5.9.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
