@@ -27,12 +27,4 @@ You will find the following in [01-Class-Content](./01-Class-Content):
 
 * Supplemental content such as installation guides and learning resources
 
-* Module Project code 
-
-  This is the code for the projects that students build in their asynchronous modules in Canvas. You'll find the following in each `05-Module-Project` folder: 
-
-  1. a `main` folder containing the final project build
-
-  2. a `lesson-files` folder containing the snapshots of where the code should be at the end of each lesson in an asynchronous module of content
-
 Use these materials to build your class repository.
