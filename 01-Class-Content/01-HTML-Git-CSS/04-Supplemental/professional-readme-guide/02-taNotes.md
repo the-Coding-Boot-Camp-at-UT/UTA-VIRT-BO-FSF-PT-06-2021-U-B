@@ -7,7 +7,7 @@
 
 ## CSS Stuff!
 
-CSS has a lot of properties per tag, trying to write a summary of at least 2 tags would be this document extremely long. The purpose of this text is that I’m going to explain the syntax of CSS and I’m going to leave web references so you can visit them and practice in your spare time.In my opinion, CSS has two big areas. One is styling, that’s more about background colors, images, how big or small are the elements, how much margin, or padding those elements are going to have. The other one is about position, position is basically where the element is going to move and resides.
+CSS has a lot of properties per tag, trying to write a summary of at least 2 tags would be this document extremely long. The purpose of this text is that I’m going to explain the syntax of CSS and I’m going to leave web references so you can visit them and practice in your spare time. In my opinion, CSS has two big areas. One is styling, that’s more about background colors, images, how big or small are the elements, how much margin, or padding those elements are going to have. The other one is about position, position is basically where the element is going to move and resides.
 
 The best tool for CSS is the browser. In chrome if you right click and select Inspect Element the browser is going to open an HTML and the element you selected at the moment. If you look in that new window (it could be down, left, right or in another window) you are going to see the css applied to it. This is a good way to learn patterns and try to apply it to your web pages.
 
@@ -124,6 +124,19 @@ I've navigated to the console above. The console is KEY!!!
 
 ![image](https://user-images.githubusercontent.com/29104770/123186681-48e65100-d45e-11eb-9bfc-7b30a409258c.png)
 
+## Chrome Inspector
+
+This is going to be one of the many many friends you make, maybe even your bestie during this program. You can view elements on a web page and also open the console log. 
+
+1. To access this tool open up google chrome and right click and select "inspect" 
+
+![image](https://user-images.githubusercontent.com/29104770/123188744-2c4c1800-d462-11eb-88ea-a9a825594891.png)
+
+![image](https://user-images.githubusercontent.com/29104770/123188776-38d07080-d462-11eb-9145-d6a0b974c640.png)
+
+This is going to open a new window at the bottom or side of you current page where you can change content, margins, color or any other css property. Is really useful to use it for styling the page quickly and then add the changes to your css file. 
+
+
 ---
 
 ### Flexbox (better alternative to floats):
@@ -193,5 +206,24 @@ These are the basic git commands. We are going to cover a little more about git 
 `cp -r Develop/* ~/ut-mws/homework-1/`
 
 cp (copy) -r Develop/* (copies everything that is in the Develop file into a folder called ut-mws and into another folder called homework-1
+
+---
+## Github Pages
+
+The steps to use Github Pages to host our website are the following from A-Z starting with a new repo if you already have a repo skip to step 5:
+
+1. Create the repository in github 
+2. Clone the repository to your local computer `git clone "your link"`
+3. Through the terminal add as many files as you want, but this REQUIREs an index.html file at the root level. 
+4. Push the changes to the repository.
+5. Back in Github navigate to the repository and click on the settings tab at the top right corner once inside. 
+6. Scroll down to the "github pages" section and select the master branch as the source in the first drop down. 
+7. After the refresh scroll down again to the "github pages" section and you're going to have the live link of your website. This can be shared with friends family and used in an `<a>` tag in a portfolio. 
+
+Important details:
+
+1. The index.html file needs to reside at the root level of your repository. This is needed to github to find the pages.
+2. You can add more directories like css, js, imgs to the repository and refer to the files inside those directories using relative paths in your index.html.
+3. You can also add other html pages and use `<a href="">` to refer to those files inside your repository.
 
 ---
