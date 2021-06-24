@@ -223,4 +223,3 @@ Take Aways:
 - You've gotta put in the hours. This program is only going to provide you with the tools. YOU have to do the work.
 - You can do it! Just dedicate the time! Everyone can code and everyone's ramp is going to be different. Focus on your ramp.
 
----
