@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffeee;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0 10%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none outside;
+}
+
+li {
+  list-style: none;
+  width: 135px;
+}
+
+/* TODO: Add your code to change the style of the list items when hovering over them */
+
+/* TODO: Add your code to add a potato emoji to the list item */
+
+/* TODO: Add your code to change the potato to a heart */
+
+/* TODO: Add your code to give every other list item a different background color */
+
+/* TODO: Add your code to make the first line of the first paragraph bold */
+
+/* TODO: Add your code to change the style of the first letter of the second paragraph */
