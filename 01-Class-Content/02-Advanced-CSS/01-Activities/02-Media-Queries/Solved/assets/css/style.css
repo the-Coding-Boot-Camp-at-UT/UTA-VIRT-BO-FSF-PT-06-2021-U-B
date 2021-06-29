@@ -1,0 +1,164 @@
+:root {
+  --aquamarine: aquamarine;
+  --black: #272727;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 50px;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 40px auto;
+}
+
+#main-content,
+#sidebar {
+  width: 500px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 240, 248, 0.76);
+  border-radius: 5px;
+  font-size: 35px;
+}
+
+#main-content {
+  float: left;
+  color: white;
+  background: black;
+}
+
+#sidebar {
+  float: right;
+  color: white;
+  background: black;
+}
+
+/* TODO: Add media queries for the following screen sizes */
+
+/* Width at 1024px and below */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 600px and below */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 480px and below */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 300px and below */
+@media screen and (max-width: 300px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
