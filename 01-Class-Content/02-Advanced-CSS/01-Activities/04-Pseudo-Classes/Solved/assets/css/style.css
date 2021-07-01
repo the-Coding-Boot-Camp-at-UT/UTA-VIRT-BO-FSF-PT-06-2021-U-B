@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffeee;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0 10%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none outside;
+}
+
+li {
+  list-style: none;
+  width: 135px;
+}
+
+/* Changes the style of the list items when hovering over them */
+li:hover {
+  color: purple;
+  font-weight: 900;
+  list-style-type: none;
+  text-shadow: 2px 2px lightpink;
+}
+
+/* Adds a potato emoji to the list item */
+li::before {
+  content: '🥔';
+}
+
+/* Changes the potato to a heart */
+li:hover::before {
+  content: '❤️';
+}
+
+/* Gives every other list item a different background color */
+li:nth-child(2n -1) {
+  background-color: wheat;
+}
+
+/* Makes the first line of the first paragraph bold */
+.intro::first-line {
+  font-weight: 900;
+}
+
+/* Changes the style of the first letter of the second paragraph */
+.conclusion::first-letter {
+  font-weight: 900;
+  font-size: x-large;
+  color: red;
+  font-family: cursive;
+}
