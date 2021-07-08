@@ -669,7 +669,7 @@ Global This: [Global object](https://developer.mozilla.org/en-US/docs/Glossary/G
 ---
 ## Window:
 
-(Or Browser Model Object (BOM)) The window is what is loaded first and is supported by all browsers. This allows JavaScript to communicate with the browser. The document or (DOM) is what is loaded inside the window. Some important things to remember:
+(Or Browser Object Model (BOM)) The window is what is loaded first and is supported by all browsers. This allows JavaScript to communicate with the browser. The document or (DOM) is what is loaded inside the window. Some important things to remember:
 
 - Global variables are properties of the window object.
 - Global functions are methods of the window object.
