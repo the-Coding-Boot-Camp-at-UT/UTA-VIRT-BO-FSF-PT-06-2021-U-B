@@ -1,10 +1,229 @@
 **What we covered/Objectives:** 
 
-- To review some git commands. Yes we know it's very confusing right now. You WILL get the hang of it. I did not understand when I first learned either.
-- CSS Intro
-- Flexbox fun! (Extra, but I SUGGEST it)
+- Get introduced to each other and the team.
+- To confirm that students have completed all required pre-work (software + tools installation)
+- To introduce basic terminal/bash commands
+- To create a basic HTML page
 
 
+### Terminal Commands:
+
+- `cd` - changes to home directory
+- `cd ~` - changes to home directorymkdi
+- `cd <directory_name>` - changes to directory_name
+- `cd ..` - changes up by one directory
+- `cd ../..` - changes up by two directories
+- `ls` - show files and directory names
+- `ls -l` - show files and directory names in list format
+- `ls -la` - show all files and directory names in list format (even hidden files and directories)
+- `pwd` - prints current directory
+- `touch <file_name>` - creates a new file
+- `mkdir <directory_name>` - creates a new directory
+- `mkdir <dir_name_1> <dir_name_2>` - creates two new directories at the same level
+- `mkdir -p <dir_name_1>/<dir_name_2>` - creates dir_name_1 and inside it, creates dir_name_2
+- `rmdir <dir_name>` - removes a dir_name if and only if dir_name is empty
+- `rm -rf <dir_name>` - deletes an entire directory, subdirectories and files recursively
+- `code .` - opens vs code using the current directory as the source
+- `code <dir_name>` - opens vs code using <dir_name> as the source
+- `open .` - opens the folder or file in the finder window (mac)
+- `explorer .` - opens the folder or file in the explorer window (windows)
+
+Tip: if you press tab after writing a couple of characters bash (terminal) is going to autocompletes the command, directory or filename
+
+---
+
+### HTML Tags:
+
+```jsx
+<!Doctype html>
+```
+
+- tells the browser that we are using html 5 and the document is an html page
+
+```jsx
+<html></html>
+```
+
+- the holder of our html document
+
+```jsx
+<head></head>
+```
+
+- here we are html tags so the browser can load them first. Examples of this are:
+
+```jsx
+<script></script>
+```
+
+- holds our JavaScript script
+- We can write JavaScript between <script></script> and the browser is going to run it. I don’t recommend it unless you want to test something fast. We are gonna cover this later in the course
+- src=”{url}” - tells the browser where the JavaScript file resides
+- type=”text/javascript” - tells the browser that we are running JavaScript. Back in the day browsers supported other types of languages like VBScript but JavaScript won the war. :-)
+
+```jsx
+<link rel="stylesheet" type="text/css" href="#"> 
+```
+
+- holds our css document
+- rel=”stylesheet” - attribute that tells the browser this link is a stylesheet
+- type=”text/css” - attribute that tells the browser we are going to use css to style our page
+- href=”{url}” - attribute that tells the browser where our css resides
+
+```jsx
+<style></style>
+```
+
+- inside this tag we can use CSS language to style our page
+
+```jsx
+<title></title>
+```
+
+- Sets the title of the document
+
+```jsx
+<body></body>
+```
+
+- here we are going to write html tags that our users can see in the browser. Examples of this are
+
+```jsx
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+```
+
+- for headings
+
+```jsx
+<a></a>
+```
+
+- creates a link
+- href={url} - attribute for the a tag that sets the url we want the link to point to
+- target=”_blank” - attribute that forces the link to open in a new tab
+
+```
+<img />
+```
+
+- shows an image in a browser
+- src={url} - attribute for the img tag that tells the browser where the image resides
+
+```
+<ul>
+	<li></li>
+	<li></li>
+</ul>
+```
+
+- holder for an unordered list
+- shows a list item. IMPORTANT: This needs to be inside of `<ol> or <ul>`
+
+```
+<ol>
+	<li></li>
+	<li></li>
+</ol>
+```
+
+- holder for an ordered list
+- `<li>`
+- shows a list item. IMPORTANT: This needs to be inside of `<ol> or <ul>`
+
+```
+<div></div>
+```
+
+- container of holder of other html. This is used a lot for positioning elements in css
+
+```
+<p></p>
+```
+
+- used to write paragraphs
+
+```
+<br> 
+```
+
+- used for line breaks
+
+```
+<video></video>
+```
+
+- for videos
+
+```
+<audio></audio>
+```
+
+- for audios
+
+```
+<header></header>
+```
+
+- container for header
+
+```
+<nav></nav>
+```
+
+- container for navigation
+
+```
+<footer></footer>
+```
+
+- container for footer
+
+```
+<form></form>
+```
+
+- container of a form
+
+```
+<input></input>
+```
+
+- creates different types of inputs for the page
+
+```
+<label></label>
+```
+
+- used for writing text, used a lot at the side of inputs
+
+```
+<button></button>
+```
+
+- use for submit forms, or doing any type of clickable event
+
+```
+<textarea></textarea>
+```
+
+- creates a large input box, a good example of this is when a user needs to leave a review
+
+*Note: Molly’s favorite HTML shortcut: when creating a new html open a page and type `!` then hit ENTER you will have an auto populated HTML doc.*
+
+---
+
+Take Aways: 
+
+- This is HARD this is why devs get paid the big bucks.
+- You've gotta put in the hours. This program is only going to provide you with the tools. YOU have to do the work.
+- You can do it! Just dedicate the time! Everyone can code and everyone's ramp is going to be different. Focus on your ramp.
+
+---
 ## CSS Stuff!
 
 CSS has a lot of properties per tag, trying to write a summary of at least 2 tags would be this document extremely long. The purpose of this text is that I’m going to explain the syntax of CSS and I’m going to leave web references so you can visit them and practice in your spare time. In my opinion, CSS has two big areas. One is styling, that’s more about background colors, images, how big or small are the elements, how much margin, or padding those elements are going to have. The other one is about position, position is basically where the element is going to move and resides.
@@ -40,7 +259,7 @@ My suggestion, use classes as much as possible, since that’s gonna give you th
 
 ---
 
-### Relative Paths
+## Relative Paths
 
 Relative paths are the way we connect to different documents in our website. For example, if our style.css resides inside the assets directory we can access the file in our html by using the following relative path: assets/style.css
 
@@ -50,7 +269,7 @@ Relative paths are the way we connect to different documents in our website. For
 
 ---
 
-### Box Model:
+## Box Model:
 
 In CSS, every element can be considered to fit within a series of boxes. Each box can be individually adjusted to provide spacing between elements or to fill in elements with colors.
 
@@ -65,7 +284,7 @@ In CSS, every element can be considered to fit within a series of boxes. Each bo
 
 ---
 
-### CSS Floats:
+## CSS Floats:
 
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
 
@@ -87,7 +306,7 @@ This will clear the inline float of the elements.
 
 ---
 
-### Positioning:
+## Positioning:
 
 The `position` property specifies the type of positioning method used for an element. The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
 
@@ -110,7 +329,7 @@ The `position` property specifies the type of positioning method used for an ele
 
 ---
 
-### Chorme Inspector Tool:
+## Chorme Inspector Tool:
 
 To access this right click then select inspect. 
 
@@ -124,28 +343,13 @@ I've navigated to the console above. The console is KEY!!!
 
 ![image](https://user-images.githubusercontent.com/29104770/123186681-48e65100-d45e-11eb-9bfc-7b30a409258c.png)
 
-## Chrome Inspector
-
-This is going to be one of the many many friends you make, maybe even your bestie during this program. You can view elements on a web page and also open the console log. 
-
-1. To access this tool open up google chrome and right click and select "inspect" 
-
-![image](https://user-images.githubusercontent.com/29104770/123188744-2c4c1800-d462-11eb-88ea-a9a825594891.png)
-
-![image](https://user-images.githubusercontent.com/29104770/123188776-38d07080-d462-11eb-9145-d6a0b974c640.png)
-
-This is going to open a new window at the bottom or side of you current page where you can change content, margins, color or any other css property. Is really useful to use it for styling the page quickly and then add the changes to your css file. 
-
-
 ---
 
-### Flexbox (better alternative to floats):
+## Flexbox (better alternative to floats):
 
 Flexbox is the new way of handling the layout of the page. The best reference I can give you folks to flexbox are the following websites.
 
-Read these docs: 
-
-[A Complete Guide to Flexbox | CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+Read these docs: [A Complete Guide to Flexbox | CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 The gist: 
 
@@ -174,7 +378,7 @@ flex-direction:
 
 ---
 
-### Git Commands
+## Git Commands
 
 1. `git init` - creates an empty repository in the current directory, only use this if and only if you are going to create a repository from scratch in your computer
 2. `git clone "url"` - clones the repository from <url>
